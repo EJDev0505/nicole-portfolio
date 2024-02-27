@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f861a9eb6.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+    <title>PORTFOLIO</title>
+</head>
+<style>
+   .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230, 57, 230);
+    z-index: 1;
+    transition: opacity 190.50s, visibility 3.50s;
+   }
+
+   .loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+   }
+ 
+   .loader::after{ 
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddd;
+    border-top-color: rgb(105, 12, 105);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+   }
+
+   @keyframes loading {
+    from{transform: rotate(0turn);}
+    to{transform: rotate(1turn);}
+   }
+</style>
+
+<script>
+       
+</script>
+<body>
+    <div class="loader"></div>
+    <div id="first-section">
+        <div class="banner"></div>
+        <div class="nav">
+            <div class="nav-logo"><span>N</span>P</div>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#"><li>Ikigai</li></a>
+                <a href="#"><li>Contact</li></a>    
+            </ul>   
+            <button id="button-nav">Contact Me</button>
+        </div>
+        <div class="info-head">
+            <div class="head-name">Hi im <span>Nicole Pago</span></div>
+        <div class="text-head">Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Maiores voluptate consequatur corporis 
+            blanditiis ea omnis odit pariatur eius laudantium excepturi, 
+            saepe nulla quam harum placeat nihil, itaque perferendis 
+            accusamus. Repudiandae!Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Sequi, quae dicta accusantium reprehenderit 
+            repudiandae cum ipsum neque soluta ipsam saepe omnis similique 
+            dignissimos expedita beatae laboriosam. Minima eum inventore animi!</div>
+            <button id="button">Download CV</button>
+        </div>    
+    </div>
+    <div id="about">
+        <div class="about-me">About Me
+        </div>
+        <div  class="wrapper">
+            <img src="./assests/nicolr-removebg-preview.png" class="img-about">
+            <div class="info">
+               
+                <div class="text">
+                    <div class="tittle">Text</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Molestiae nihil voluptatem, facere impedit dolores quasi officiis 
+                    nesciunt tenetur dolor, reiciendis quibusdam odit quidem odio in, 
+                    quae officia minus at aut. Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Quasi molestias pariatur sed sequi libero rerum nisi, 
+                    blanditiis quisquam harum repellendus perferendis doloribus, ipsum, 
+                    modi mollitia dignissimos nihil sit minus excepturi!Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit. Quaerat praesentium ratione 
+                    commodi ut, voluptate explicabo delectus ducimus similique reprehenderit, 
+                    neque repudiandae id, quae quidem animi accusantium laudantium qui.Recusandae, eveniet? </p>
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hobby">
+        <div class="hobby-wrapper">
+            <div class="box">
+                <i class="fa-solid fa-code"></i>
+                <div class="box-tittle">Coding</div>
+                <div class="body-text">Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Ex, excepturi voluptates omnis porro 
+                    pariatur vitae error, dolorum amet ab quasi autem ea, 
+                    voluptatibus quas alias iste in minus temporibus. Qui!</div>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-music"></i>
+                <div class="box-tittle">Music Listener</div>
+                <div class="body-text">
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Ex, excepturi voluptates omnis porro 
+                    pariatur vitae error, dolorum amet ab quasi autem ea, 
+                    voluptatibus quas alias iste in minus temporibus. Qui!
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <div class="box-tittle">Productive</div>
+                <div class="body-text">
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Ex, excepturi voluptates omnis porro 
+                    pariatur vitae error, dolorum amet ab quasi autem ea, 
+                    voluptatibus quas alias iste in minus temporibus. Qui!
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+    </style>
+</body>
+</html>
